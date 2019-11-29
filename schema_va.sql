@@ -15,7 +15,7 @@ CREATE TABLE usuario (
   CPF CHAR(11) NOT NULL,
   PRIMARY KEY (id),
   UNIQUE (CPF)
-)
+);
 
 CREATE TABLE aplicador (
   id INT AUTO_INCREMENT,
@@ -23,7 +23,7 @@ CREATE TABLE aplicador (
   CPF CHAR(11) NOT NULL,
   PRIMARY KEY (id),
   UNIQUE (CPF)
-)
+);
 
 CREATE TABLE aplicacao (
   id INT AUTO_INCREMENT,
@@ -35,4 +35,9 @@ CREATE TABLE aplicacao (
   FOREIGN KEY(id_vacina) REFERENCES vacina(id),
   FOREIGN KEY(id_usuario) REFERENCES usuario(id),
   FOREIGN KEY(id_aplicador) REFERENCES aplicador(id)
-)
+);
+
+DESC usuario;
+DESC aplicador;
+DESC vacina;
+DESC aplicacao;
