@@ -1,4 +1,5 @@
 CREATE DATABASE va;
+
 use va;
 
 CREATE TABLE vacina (
@@ -46,6 +47,9 @@ CREATE TABLE aplicacao (
 );
 
 DESC usuario;
+
 DESC aplicador;
+
 DESC vacina;
+
 DESC aplicacao;
