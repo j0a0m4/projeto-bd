@@ -40,7 +40,7 @@ CREATE TABLE aplicacao (
   id_vacina INT NOT NULL,
   id_usuario INT NOT NULL,
   id_aplicador INT NOT NULL,
-  data_aplicacao TIMESTAMP DEFAULT CURDATE(),
+  data_aplicacao DATE DEFAULT CURDATE(),
   PRIMARY KEY(id),
   FOREIGN KEY(id_vacina) REFERENCES vacina(id),
   FOREIGN KEY(id_usuario) REFERENCES usuario(id),
