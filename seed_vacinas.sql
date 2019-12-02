@@ -1,83 +1,80 @@
 use va;
 
 INSERT INTO
-  vacina (
-    nome,
-    descricao,
-    validade
-  )
-VALUES (
-    'BCG',
-    'Protege contra tuberculose',
-    '05.01.2020'
-),
-(
-    'VIP/VOP', 
-    'Protege contra poliomielite',
-    '22.01.2020'
-),
-(
-    'Tetravalente',
-    'Protege contra tétano, difteria, coqueluche e meningite',
-    '31.07.2020'
-),
-(
-    'Tetra Viral'
-    'Protege contra sarampo, rubéola e caxumba',
-    '20.05.2020'
-),
-(
-    'Hepatite A', 
-    'Protege contra Hepatite A',
-    '20.07.2020'
-),
-(
-    'Hepatite B', 
-    'Protege contra Hepatite B',
-    '20.08.2020'
-),
-(
-    'Febre Amarela',
-    'Protege contra Febre Amarela',
-    '27.03.2020'
-),
-(
-    'Penta/DTP', 
-    'Protege contra Haemophilus influenzae tipo B, tosse convulsa, tétano, hepatite B e difteria',
-    '11.03.2020'
-),
-(
-    'Pneumocócica 10v',
-    'Protege contra pneumonia, meningite, otite',
-    '24.03.2020'
-),
-(
-    'Rotavírus Humano', 
-    'Protege contra rotavirose',
-    '23.05.2020'
-),
-(
-    'Meningocócica C',
-    'Protege contra meningite e meningococcemia',
-    '09.07.2020'
-),
-(
-    'Varicela',
-    'Protege contra catapora',
-    '10.08.2020'
-),
-(
-    'HPV', 
-    'Protege contra o vírus do papiloma humano',
-    '05.01.2020'
-),
-(
-    'Pneumocócica 23V', 
-    'Protege contra o pneumococo',
-    '08.05.2020'
-),
-(
-    'Influenza', 
-    'Protege contra o vírus influenza',
-    '18.03.2020'
-);
+    vacina (nome, descricao, validade)
+VALUES
+    (
+        'BCG',
+        'Protege contra tuberculose',
+        '2020-01-05'
+    ),
+    (
+        'VIP/VOP',
+        'Protege contra poliomielite',
+        '2020-01-22'
+    ),
+    (
+        'Tetravalente',
+        'Protege contra tétano, difteria, coqueluche e meningite',
+        '2020-07-31'
+    ),
+    (
+        'Tetra Viral',
+        'Protege contra sarampo, rubéola e caxumba',
+        '2020-05-20'
+    ),
+    (
+        'Hepatite A',
+        'Protege contra Hepatite A',
+        '2020-07-20'
+    ),
+    (
+        'Hepatite B',
+        'Protege contra Hepatite B',
+        '2020-08-20'
+    ),
+    (
+        'Febre Amarela',
+        'Protege contra Febre Amarela',
+        '2020-03-27'
+    ),
+    (
+        'Penta/DTP',
+        'Protege contra Haemophilus influenzae tipo B, tosse convulsa, tétano, hepatite B e difteria',
+        '2020-03-11'
+    ),
+    (
+        'Pneumocócica 10v',
+        'Protege contra pneumonia, meningite, otite',
+        '2020-03-24'
+    ),
+    (
+        'Rotavírus Humano',
+        'Protege contra rotavirose',
+        '2020-05-23'
+    ),
+    (
+        'Meningocócica C',
+        'Protege contra meningite e meningococcemia',
+        '2020-07-09'
+    ),
+    (
+        'Varicela',
+        'Protege contra catapora',
+        '2020-08-10'
+    ),
+    (
+        'HPV',
+        'Protege contra o vírus do papiloma humano',
+        '2020-01-05'
+    ),
+    (
+        'Pneumocócica 23V',
+        'Protege contra o pneumococo',
+        '2020-05-08'
+    ),
+    (
+        'Influenza',
+        'Protege contra o vírus influenza',
+        '2020-03-18'
+    );
