@@ -2,7 +2,7 @@ use va;
 
 INSERT INTO
   usuario (
-    primeiro_ nome,
+    primeiro_nome,
     sobrenome,
     email,
     telefone,
