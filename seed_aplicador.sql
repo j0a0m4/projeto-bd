@@ -2,7 +2,7 @@ use va;
 
 INSERT INTO
   aplicador (
-    primeiro_ nome,
+    primeiro_nome,
     sobrenome,
     email,
     telefone,
