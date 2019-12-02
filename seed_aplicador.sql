@@ -137,36 +137,4 @@ VALUES
     '(40)92249-8789',
     'F',
     '458.492.731-40'
-  ),
-  (
-    'Sal',
-    'Godfree',
-    'sgodfreeg@networksolutions.com',
-    '(51)91783-4194',
-    'F',
-    '237.814.471-61'
-  ),
-  (
-    'Sinclare',
-    'Cianni',
-    'sciannih@squarespace.com',
-    '(94)91116-7542',
-    'M',
-    '134.061.468-97'
-  ),
-  (
-    'Fanchette',
-    'Slott',
-    'fslotti@omniture.com',
-    '(62)93209-6283',
-    'F',
-    '125.254.533-86'
-  ),
-  (
-    'Lynde',
-    'Kinnerk',
-    'lkinnerkj@twitter.com',
-    '(91)94658-4143',
-    'F',
-    '244.819.757-50'
   );
