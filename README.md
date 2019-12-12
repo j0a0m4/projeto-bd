@@ -30,6 +30,8 @@ As atividades se encontram nos respectivos diretórios desse repositório:
 | Schema                       | `./schema`    |
 | Seed e consultas             | `./consultas` |
 
+Obs.: So é possivel rodar `seed_aplicacao.sql` após popular as outras tabelas.
+
 ## Tabelas
 
 ### vacina
