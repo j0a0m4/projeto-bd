@@ -20,7 +20,15 @@ Sendo assim, são 300 milhões de doses das vacinas incluídas no Calendário Na
 - [Mockaroo](https://mockaroo.com/) para gerar dados
 - [Draw.io](https://www.draw.io/) para gerar diagrama conceitual
 
-## Tabelas
+## Diagramas e Tabelas
+
+As atividades se encontram nos respectivos diretórios desse repositório:
+
+| Atividade                    | Localização   |
+| ---------------------------- | ------------- |
+| Diagrama conceitual e lógico | `./diagramas` |
+| Schema                       | `./schema`    |
+| Seed e consultas             | `./consultas` |
 
 ### vacina
 
