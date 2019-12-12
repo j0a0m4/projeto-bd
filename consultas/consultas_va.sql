@@ -35,6 +35,15 @@ FROM
   aplicacao
   JOIN usuario ON usuario.id = aplicacao.id_usuario;
 
+-- Vacinas por vencimento próximo
+SELECT
+  nome,
+  DATE_FORMAT(validade, '%d/%m/%Y') AS "Validade "
+FROM
+  vacina
+ORDER BY
+  validade;
+
 -- NUmero de vacinações por nome
 SELECT
   primeiro_nome,
@@ -71,3 +80,26 @@ GROUP BY
   vacina.id
 ORDER BY
   quantidade DESC;
+
+-- Vacinas nunca aplicadas
+SELECT
+  nome,
+  IFNULL(data_aplicacao, "Nenhum registro") AS "Data"
+FROM
+  vacina
+  LEFT JOIN aplicacao ON vacina.id = aplicacao.id_vacina
+WHERE
+  data_aplicacao IS NULL
+GROUP BY
+  vacina.id;
+
+-- Meses por frequência
+SELECT
+  DATE_FORMAT(data_aplicacao, '%M') AS mes,
+  COUNT(*) AS frequencia
+FROM
+  aplicacao
+GROUP BY
+  mes
+ORDER BY
+  frequencia DESC;
