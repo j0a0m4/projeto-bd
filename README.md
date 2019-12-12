@@ -1,4 +1,11 @@
-Projeto para disciplina projeto de banco de dados
+### Projeto: Carteira de Vacina
+Bem-vindo a documentação para o nosoo projeto de banco de dados. Vamos modelar uma carteira de vacina digital. O projeto PIBITI "CIVa - Carteira Inteligente de Vacinação" foi usado como motivação para essa escolha.
+
+### Mini mundo
+A vacinação é a maneira mais eficaz e segura de prevenir diversas doenças. Por meio
+do Sistema Único de Saúde (SUS), o Programa Nacional de Imunizações (PNI) é referência
+internacional ao promover o acesso gratuito da população às vacinas, respeitando critérios e orientações da Organização Mundial da Saúde (OMS).
+Sendo assim, são 300 milhões de doses das vacinas incluídas no Calendário Nacional de Vacinação. De fato, o setor de vacinação tem a necessidade de um sistema para gerenciar as vacinas disponíveis. O nosso banco de dados permitirá o armazenamento dos dados referentes as vacinas com informações fundamentais tais como sua data de validade, nome e descrição. Além disso o banco armazenará dados do referente aplicador como seu nome, e-mail, telefone, sexo e CPF. Também guardará dados referentes ao “aplicado” como seu nome, e-mail, CPF e sexo. O BD também conterá a entidade aplicação com data de aplicação,aplicador, aplicado e vacina.
 
 ### Grupo
 - João Marcos
@@ -7,9 +14,6 @@ Projeto para disciplina projeto de banco de dados
 
 ### Recursos
 - [Mockaroo](https://mockaroo.com/) para gerar dados
-
-## Carteira de Vacinação
-Usamos como motivação o trabalho de PIBITI "CIVA - Carteira de Vacinação Inteligente" para modelar um banco de dados.
 
 ## Tabelas
 ### vacina
