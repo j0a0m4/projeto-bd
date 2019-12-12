@@ -19,7 +19,7 @@ SELECT
 FROM
   usuario;
 
--- Todos aplicadores do sexo feminino
+-- Todos aplicadoras do sexo feminino
 SELECT
   CONCAT_WS(" ", primeiro_nome, sobrenome) AS "Nome Completo"
 FROM
@@ -27,7 +27,7 @@ FROM
 WHERE
   sexo = "F";
 
--- Selecion primeiro nome e datas de aplicação
+-- Selecionar primeiro nome e datas de aplicação
 SELECT
   primeiro_nome,
   data_aplicacao
@@ -47,13 +47,27 @@ GROUP BY
 ORDER BY
   count(*) DESC;
 
---
+-- Usuarios nunca vacinados
+SELECT
+  CONCAT(primeiro_nome, " ", sobrenome) AS "Nome",
+  email,
+  IFNULL(data_aplicacao, "Nenhum registro") AS "Data"
+FROM
+  usuario
+  LEFT JOIN aplicacao ON usuario.id = aplicacao.id_usuario
+WHERE
+  data_aplicacao IS NULL
+GROUP BY
+  usuario.id;
+
+-- Vacinas mais aplicadas
 SELECT
   nome,
-  descricao,
-  data_aplicacao
+  COUNT(*) AS quantidade
 FROM
   vacina
   JOIN aplicacao ON vacina.id = aplicacao.id_vacina
 GROUP BY
-  nome;
+  vacina.id
+ORDER BY
+  quantidade DESC;
